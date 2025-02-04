@@ -1,0 +1,152 @@
+/* General Styling */
+.restaurants-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Header with Search Bar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.restaurants-title {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Search Bar */
+.search-bar {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-bar:focus {
+    border-color: #007bff;
+}
+
+/* Grid Layout for Restaurants */
+.restaurants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Restaurant Card */
+.restaurant-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+}
+
+.restaurant-name {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.restaurant-info {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Pagination Controls */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-btn {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    font-size: 16px;
+    margin: 0 10px;
+}
+.restaurants-container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.filters-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.search-bar, .filter-dropdown {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.restaurants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.restaurant-card {
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background: #fff;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.05);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination-btn {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

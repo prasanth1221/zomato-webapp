@@ -1,11 +1,17 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Restaurants from './components/Restaurants';
+import RestaurantDetails from './components/RestaurentDetails';
 
-function app(){
+function App() {
   return (
-    <div>
-      <h1>Zomato restaurant app</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Restaurants />} />
+        <Route path="/restaurant/:id" element={<RestaurantDetails />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default app;
+export default App;
